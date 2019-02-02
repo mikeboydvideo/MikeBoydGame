@@ -98,8 +98,8 @@ function draw() {
 
   // Display Score
   fill(255);
-  text('Score:', 40, 23);
-  text(score, 70, 23);
+  textAlign(LEFT);
+  text(`Score: ${score}`, 20, 23);
 
   // Display Glass Health and breath bars
   rect(width - 110, 20, glass_health * 0.01, 10);
