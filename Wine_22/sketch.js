@@ -16,9 +16,12 @@ var newlevel;
 var score;
 var breath;
 
-
+var music;
 function preload(){
   // Preload sounds, images and font
+
+  music = loadSound("assets/march.mp3");
+
   font = loadFont('assets/font.ttf');
 
   scream1 = loadSound("assets/voice1.mp3");
@@ -79,7 +82,8 @@ function preload(){
 function setup (){
   createCanvas (800,450);
 
-
+  music.setVolume(0.8);
+  music.play();
   resetSketch();
 
 }
